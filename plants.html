@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>basic bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1> Plants  by Nandyala Sumanth Reddy</h1>
+    
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">N</div>
+    <div class ="col-sm-2">A</div>
+    <div class="col-sm-2">N</div>
+    <div class="col-sm-2">D</div>
+     <div class="col-sm-2">Y</div>
+    <div class="col-sm-2">A</div> 
+    </div> 
+    <div class="row"> 
+    <div class="col-md">NYSAA</div>
+    <div class="col-md">ACER</div>
+    <div class="col-md">NERINE</div>
+    <div class="col-md">DAISY</div>
+    <div class="col-md">Yarrow</div>
+    <div class="col-md">ACCA</div>
+    
+  
+</div>
+ </div>
+  <br>
+  <p>The row with the plant names breaks first when I gradually shrink the browser size. This is due to the fact that the plant names are in larger divs with class col-md, which use more space than the smaller divs with class col-sm-2, which simply contain the letters. The larger divs are shifted to the next row as the screen size decreases since there is not enough room for them. On the other hand, the smaller letter-only divs can occupy a smaller area and remain on the same row for a longer period of time.</p>
+<div class="container">
+  <img class="img-fluid" src="nerine.jpg" height="500" width="400"/>
+  <img class="img-fluid" src="acer.jpg" height="500" width="400"/>
+  <img class="img-fluid" src="nysaa.jpg" height="300" width="200"/>
+  </div>
+
+<div class="container">
+     <img class="img-thumbnail" src="nerine.jpg" height="500" width="400"/>
+     <img class="img-thumbnail" src="acer.jpg" height="500" width="400"/> 
+     <img class="img-thumbnail" src="nysaa.jpg" height="300" width="200"/>
+</div>
+<table class="table table-striped table-hover table-bordered table-sm ">
+  <thead class="table-info">
+    <tr>
+      <th scope="col">letter</th>
+      <th scope="col">plant</th>
+      <th scope="col">mountain</th>
+      <th scope="col">lake</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-dark">
+      
+      <td>N</td>
+      <td>nysaa</td>
+      <td>naltar peak</td>
+      <td>Abaya</td>
+      
+    </tr>
+    <tr class="table-Sucess">
+
+      <td>A</td>
+      <td>acer</td>
+      <td>Amherst Peak</td>
+      <td>Atlin</td>
+    </tr>
+    <tr class="table-primary">
+      <td>N</td>
+      <td>nerine</td>
+      <td>nanda kot</td>
+      <td>Nagase</td>
+    </tr>
+    <tr class="table-Secondary">
+      <td>D</td>
+      <td>DAISY</td>
+      <td>nanga parbat </td>
+      <td>Nagarjuna Sagar Reservoir</td>
+    </tr>
+    <tr class="table-info">
+    <td>Y</td>
+    <td>Yarrow</td>
+    <td>yari</td>
+    <td>ypacarai </td>
+    </tr class="table-warning">
+    <tr><td>A</td>
+    <td>Arum Lily</td>
+    <td>ancohuma</td>
+    <td>araku</td>
+    </tr>
+
+    
+    
+      
+
+
+      
+  </tbody>
+</table>
+<label>BUTTONS</label>
+    <br>
+    <button class="btn">N</button>
+    <button class="btn">A</button>
+    <button class="btn">N</button>
+    <button class="btn">D</button>
+    <button class="btn">Y</button>
+    <button class="btn">A</button>
+    <br>
+    <label>BUTTON GROUPS</label>
+    <br>
+    <div>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-success">N</button>
+                <button type="button" class="btn btn-success">S</button>
+                <button type="button" class="btn btn-success">R</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-warning">N</button>
+                <button type="button" class="btn btn-warning">S</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-danger">N</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="basic.html">Basic Page</a>
+            <a class="dropdown-item" href="advanced.html">Advanced Page</a>
+        </div>
+    </div>
+    <br>
+    <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="basic.html">Basic Page</a>
+            <a class="dropdown-item" href="advanced.html">Advanced Page</a>
+        </div>
+    </div>
+
+
+
+  
+    
+</body>
+</html>
